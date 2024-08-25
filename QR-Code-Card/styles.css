@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 :root {
-  --bg-color: #d5e1ef;
-  --card-color: #ffffff;
-  --heding-color: #1f314f;
-  --text-color: #68778d;
+  --bg-color: hsl(212, 45%, 89%);
+  --card-color: hsl(0, 0%, 100%);
+  --heding-color: hsl(218, 44%, 22%);
+  --text-color: hsl(216, 15%, 48%);
 }
 
 * {
@@ -29,6 +29,7 @@ body {
   padding: 1rem;
   border-radius: 20px;
   text-align: center;
+  box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.0477);
 }
 
 .card img {
