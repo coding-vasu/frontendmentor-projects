@@ -34,8 +34,8 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/mdn-docs-wave-extension-5mA4NGYgXD)
+- Live Site URL: [coding-vasu-blog-preview.netlify.app](https://coding-vasu-blog-preview.netlify.app/)
 
 ## My process
 
