@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Showcase](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ)
+- Live Site URL: [Social Links Demo](https://coding-vasu-social-links.netlify.app/)
 
 ## My process
 
