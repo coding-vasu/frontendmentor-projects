@@ -10,17 +10,16 @@
 </head>
 
 <body>
-
   <body>
     <article class="recipe" aria-labelledby="recipe-title" tabindex="0">
   
-      <figure class="recipe__figure" tabindex="0">
+      <figure class="recipe__figure" tabindex="0" role="banner">
         <img class="recipe__image" src="assets/images/image-omelette.jpeg" alt="Omelet Recipe" tabindex="0" />
       </figure>
   
       <!-- Header-->
-      <div class="recipe__main" tabindex="0">
-        <header class="recipe__header" tabindex="0">
+      <div class="recipe__main" tabindex="0" role="main">
+        <header class="recipe__header"  tabindex="0">
           <h1 class="recipe__title" id="recipe-title" tabindex="0">Simple Omelette Recipe</h1>
           <p class="recipe__description" tabindex="0">
             An easy and quick dish, perfect for any meal. This classic omelette
@@ -29,7 +28,8 @@
           </p>
         </header>
   
-        <!-- Preparation -->
+        <div role="contentinfo">
+          <!-- Preparation -->
         <section class="recipe__preparation" aria-labelledby="preparation-title" tabindex="0">
           <h2 class="recipe__preparation-title" id="preparation-title" tabindex="0">Preparation time</h2>
           <ul class="recipe__preparation-list" tabindex="0">
@@ -136,6 +136,8 @@
             </tbody>
           </table>
         </section>
+        
+        </div>
       </div>
     </article>
   </body>
