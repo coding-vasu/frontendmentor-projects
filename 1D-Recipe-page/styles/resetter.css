@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif:wght@400&display=swap");
+
+/* 1. Box sizing and default resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* 2. HTML and body defaults */
+html {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 3. Typography */
+h1,h2,h3,h4,h5,h6,
+button,input,label {
+  line-height: 1.5;
+}
+
+/* h1,h2,h3,h4,h5,h6 {
+  text-wrap: auto;
+  overflow-wrap: break-word;
+  white-space: normal;
+} */
+
+/* 4. Lists */
+/* ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+} */
+
+/* 5. Links */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* 6. Media elements */
+img,picture,video,canvas,svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Form elements */
+input,button,textarea,select {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* 8. Misc */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  /* Colors */
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+
+  /* Typography */
+  --font-family: "Outfit", sans-serif;
+  --font-family-serif: "Young Serif", serif;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing -or- Sizes */
+  --size-8: 0.5rem;
+  --size-12: 0.75rem;
+  --size-16: 1rem;
+  --size-24: 1.5rem;
+  --size-32: 2rem;
+  --size-36: 2.25rem;
+  --size-40: 2.5rem;
+  --size-48: 3rem;
+  --size-128: 8rem;
+}
