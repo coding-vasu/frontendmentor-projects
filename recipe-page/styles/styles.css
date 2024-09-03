@@ -67,7 +67,6 @@ hr {
 }
 
 .recipe__picture .recipe__image {
-  object-fit: cover;
   width: clamp(375px, 50vw, 656px);
   height: auto;
   border-radius: 0;
