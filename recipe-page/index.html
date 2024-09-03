@@ -15,11 +15,24 @@
   <meta property="og:image" content="assets/images/image-omelette.jpeg" />
   <meta property="og:url" content="https://main--omelette-recipe-blog.netlify.app" />
   <meta property="og:type" content="article" />
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif:wght@400&display=swap" rel="stylesheet">
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles/styles.css" />
+  <script>
+    WebFontConfig = {
+      google: { families: ['Outfit:400,600,700', 'Young Serif:400'] }
+    };
+    (function(d) {
+      var wf = d.createElement('script'), s = d.scripts[0];
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.async = true;
+      s.parentNode.insertBefore(wf, s);
+    })(document);
+  </script>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
   <title>Recipe page</title>
 </head>
@@ -29,7 +42,7 @@
   <main class="recipe"  aria-labelledby="recipe-title" tabindex="0">
   
     <figure class="recipe__figure" tabindex="0">
-      <img class="recipe__image" src="assets/images/image-omelette.jpeg" alt="Omelet Recipe" tabindex="0" />
+      <img class="recipe__image" src="assets/images/image-omelette.jpeg" alt="Omelet Recipe" width="100%" tabindex="0" />
     </figure>
 
     <!-- Header-->
