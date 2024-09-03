@@ -4,14 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats." />
+  <meta name="description"
+    content="An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats." />
   <meta name="keywords" content="omelette, recipe, easy recipe, quick meal, eggs, cooking" />
   <meta name="author" content="Vasu Vallabh" />
   <meta name="robots" content="index, follow" />
-  
+
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Simple Omelette Recipe" />
-  <meta property="og:description" content="An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats." />
+  <meta property="og:description"
+    content="An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats." />
   <meta property="og:image" content="assets/images/image-omelette.jpeg" />
   <meta property="og:url" content="https://main--omelette-recipe-blog.netlify.app" />
   <meta property="og:type" content="article" />
@@ -19,10 +21,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" 
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
-      as="style"
-      onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')">
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" as="style"
+    onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')">
 
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
@@ -31,11 +32,20 @@
 
 <body>
 
-  <main class="recipe"  aria-labelledby="recipe-title" tabindex="0">
-  
-    <figure class="recipe__figure" tabindex="0">
-      <img class="recipe__image" src="assets/images/image-omelette.jpeg" alt="Omelet Recipe" width="100%" height="auto" tabindex="0" />
-    </figure>
+  <main class="recipe" aria-labelledby="recipe-title" tabindex="0">
+
+    <picture class="recipe__picture" tabindex="0">
+      <img class="recipe__image" src="assets/images/image-omelette_ct25sp_c_scale,w_1312.jpg" srcset="assets/images/image-omelette_ct25sp_c_scale,w_320.jpg 320w,
+                  assets/images/image-omelette_ct25sp_c_scale,w_748.jpg 748w,
+                  assets/images/image-omelette_ct25sp_c_scale,w_1019.jpg 1019w,
+                  assets/images/image-omelette_ct25sp_c_scale,w_1287.jpg 1287w,
+                  assets/images/image-omelette_ct25sp_c_scale,w_1312.jpg 1312w" sizes="(max-width: 320px) 280px, 
+                   (max-width: 748px) 728px, 
+                   (max-width: 1019px) 1000px, 
+                   (max-width: 1287px) 1260px, 
+                   1312px" width="1312" height="600" alt="Omelet Recipe" tabindex="0">
+    </picture>
+
 
     <!-- Header-->
     <article class="recipe__main" tabindex="0">
@@ -52,7 +62,8 @@
       <section class="recipe__preparation" aria-labelledby="preparation-title" tabindex="0">
         <h2 class="recipe__preparation-title" id="preparation-title" tabindex="0">Preparation time</h2>
         <ul class="recipe__preparation-list" tabindex="0">
-          <li class="recipe__preparation-item" tabindex="0"><span><strong>Total</strong>: Approximately 10 minutes</span></li>
+          <li class="recipe__preparation-item" tabindex="0"><span><strong>Total</strong>: Approximately 10
+              minutes</span></li>
           <li class="recipe__preparation-item" tabindex="0"><span><strong>Preparation</strong>: 5 minutes </span></li>
           <li class="recipe__preparation-item" tabindex="0"><span><strong>Cooking</strong>: 5 minutes</span></li>
         </ul>
@@ -66,7 +77,8 @@
           <li class="recipe__ingredients-item" tabindex="0"><span> Salt, to taste </span></li>
           <li class="recipe__ingredients-item" tabindex="0"><span> Pepper, to taste </span></li>
           <li class="recipe__ingredients-item" tabindex="0"><span> 1 tablespoon of butter or oil </span></li>
-          <li class="recipe__ingredients-item" tabindex="0"><span> Optional fillings: cheese, diced vegetables, cooked meats, herbs
+          <li class="recipe__ingredients-item" tabindex="0"><span> Optional fillings: cheese, diced vegetables, cooked
+              meats, herbs
             </span></li>
         </ul>
       </section>
@@ -125,7 +137,8 @@
       <!-- Nutrition -->
       <section class="recipe__nutrition" aria-labelledby="nutrition-title" tabindex="0">
         <h3 class="recipe__nutrition-title" id="nutrition-title" tabindex="0">Nutrition</h3>
-        <p class="recipe__nutrition-description" tabindex="0">The table below shows nutritional values per serving without the
+        <p class="recipe__nutrition-description" tabindex="0">The table below shows nutritional values per serving
+          without the
           additional fillings.</p>
         <table class="recipe__nutrition-table" aria-labelledby="nutrition-caption" tabindex="0">
           <caption id="nutrition-caption" class="visually-hidden">Nutrition Information Per Serving</caption>

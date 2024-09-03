@@ -60,16 +60,16 @@ hr {
   padding: var(--size-40) var(--size-32);
 }
 
-.recipe__figure {
+.recipe__picture {
   display: grid;
   place-items: center;
   width: 100%;
 }
 
-.recipe__figure .recipe__image {
+.recipe__picture .recipe__image {
   object-fit: cover;
-  max-height: 18.75rem; /* 300px */
-  width: 100%;
+  width: clamp(375px, 50vw, 656px);
+  height: auto;
   border-radius: 0;
 }
 
@@ -152,7 +152,7 @@ hr {
     font-size: var(--size-40);
   }
 
-  .recipe__figure .recipe__image {
+  .recipe__picture .recipe__image {
     border-radius: 0.75rem; /* 12px */
   }
 }
