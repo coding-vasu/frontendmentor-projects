@@ -1,4 +1,4 @@
-@import url("/styles/resetter.css");
+@import url("resetter.css");
 
 html, body {
   font-family: var(--font-family);
@@ -13,12 +13,12 @@ h1, h3 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
 }
 
 h3 {
   color: var(--Brown-800);
-  font-size: 28px;
+  font-size: 1.75rem; /* 28px */
 }
 
 p, strong, li {
@@ -35,7 +35,7 @@ ul li::marker, ol li::marker {
 }
 
 ul li::marker {
-  font-size: 10px;
+  font-size: 0.625rem; /* 10px */
 }
 
 li {
@@ -43,13 +43,13 @@ li {
 }
 
 hr {
-  height: 1px;
+  height: 0.0625rem; /* 1px */
   background-color: var(--Stone-150);
   border: none;
 }
 
 .recipe {
-  max-width: 420px;
+  max-width: 26.25rem; /* 420px */
   background-color: var(--White);
   display: grid;
 }
@@ -68,7 +68,7 @@ hr {
 
 .recipe__figure .recipe__image {
   object-fit: cover;
-  max-height: 300px;
+  max-height: 18.75rem; /* 300px */
   width: 100%;
   border-radius: 0;
 }
@@ -123,7 +123,7 @@ hr {
 }
 
 .recipe__nutrition .recipe__nutrition-cell {
-  padding: 8px 0 8px 16px;
+  padding: 0.5rem 0 0.5rem 1rem; /* 8px 0 8px 16px */
 }
 
 .recipe__nutrition .recipe__nutrition-cell:first-child {
@@ -137,11 +137,11 @@ hr {
 
 @media only screen and (min-device-width: 420px) {
   .recipe {
-    max-width: 616px;
+    max-width: 38.5rem; /* 616px */
     row-gap: var(--size-32);
     padding: var(--size-40);
-    margin: 128px auto;
-    border-radius: 24px;
+    margin: 8rem auto; /* 128px */
+    border-radius: 1.5rem; /* 24px */
   }
 
   .recipe__main {
@@ -153,21 +153,21 @@ hr {
   }
 
   .recipe__figure .recipe__image {
-    border-radius: 12px;
+    border-radius: 0.75rem; /* 12px */
   }
 }
 
 @media only screen and (min-device-width: 1024px) {
   .recipe {
-    max-width: 736px;
+    max-width: 46rem; /* 736px */
   }
 }
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  width: 0.0625rem; /* 1px */
+  height: 0.0625rem; /* 1px */
+  margin: -0.0625rem; /* -1px */
   padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
