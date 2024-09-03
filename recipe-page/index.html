@@ -23,10 +23,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload"
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" as="style"
-    onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')">
+    onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')" loading="lazy">
 
-  <link rel="stylesheet" href="styles/styles.min.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="styles/styles.min.css" loading="lazy"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" as="image" loading="lazy"/>
   <title>Recipe page</title>
 </head>
 
@@ -43,7 +43,7 @@
       assets/images/image-omelette,w_1312.webp 1312w" 
       sizes="(max-width: 1312px) 100vw, 1312px">
 
-      <img class="recipe__image" loading="eager" width="320" height="146" alt="Omelet Recipe" tabindex="0"
+      <img class="recipe__image" fetchpriority="high" loading="eager" width="320" height="146" alt="Omelet Recipe" tabindex="0"
         sizes="(max-width: 1312px) 100vw, 1312px" srcset="
       assets/images/image-omelette,w_320.jpg 320w,
       assets/images/image-omelette,w_748.jpg 748w,
