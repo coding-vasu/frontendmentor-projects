@@ -35,11 +35,24 @@
   <main class="recipe" aria-labelledby="recipe-title" tabindex="0">
 
     <picture class="recipe__picture" tabindex="0">
-      <source type="image/webp" srcset="assets/images/image-omelette.webp">
-      <source type="image/jpeg" srcset="assets/images/image-omelette.jpeg">
-      <img class="recipe__image" src="assets/images/image-omelette.jpeg" width="656" height="300" alt="Omelet Recipe" tabindex="0">
-    </picture>
+      <source type="image/webp" srcset="
+      assets/images/image-omelette,w_320.webp 320w,
+      assets/images/image-omelette,w_748.webp 748w,
+      assets/images/image-omelette,w_1019.webp 1019w,
+      assets/images/image-omelette,w_1287.webp 1287w,
+      assets/images/image-omelette,w_1312.webp 1312w" 
+      sizes="(max-width: 1312px) 100vw, 1312px">
 
+      <img class="recipe__image" loading="lazy" width="656" height="300" alt="Omelet Recipe" tabindex="0"
+        sizes="(max-width: 1312px) 100vw, 1312px" srcset="
+      assets/images/image-omelette,w_320.jpg 320w,
+      assets/images/image-omelette,w_748.jpg 748w,
+      assets/images/image-omelette,w_1019.jpg 1019w,
+      assets/images/image-omelette,w_1287.jpg 1287w,
+      assets/images/image-omelette,w_1312.jpg 1312w"
+        src="assets/images/image-omelette,w_1312.jpg">
+
+    </picture>
 
     <!-- Header-->
     <article class="recipe__main" tabindex="0">
