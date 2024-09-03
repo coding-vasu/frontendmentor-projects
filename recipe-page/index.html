@@ -35,16 +35,33 @@
   <main class="recipe" aria-labelledby="recipe-title" tabindex="0">
 
     <picture class="recipe__picture" tabindex="0">
-      <img class="recipe__image" src="assets/images/image-omelette_ct25sp_c_scale,w_320.jpg" srcset="assets/images/image-omelette_ct25sp_c_scale,w_320.jpg 320w,
-                  assets/images/image-omelette_ct25sp_c_scale,w_748.jpg 748w,
-                  assets/images/image-omelette_ct25sp_c_scale,w_1019.jpg 1019w,
-                  assets/images/image-omelette_ct25sp_c_scale,w_1287.jpg 1287w,
-                  assets/images/image-omelette_ct25sp_c_scale,w_1312.jpg 1312w" sizes="(max-width: 320px) 280px, 
-                   (max-width: 748px) 728px, 
-                   (max-width: 1019px) 1000px, 
-                   (max-width: 1287px) 1260px, 
-                   320px" width="320" height="146" alt="Omelet Recipe" tabindex="0">
-    </picture>
+      <!-- Fallback for browsers that do not support WebP -->
+      <source srcset="assets/images/image-omelette-320.jpg 320w,
+                     assets/images/image-omelette-748.jpg 748w,
+                     assets/images/image-omelette-1019.jpg 1019w,
+                     assets/images/image-omelette-1287.jpg 1287w,
+                     assets/images/image-omelette-1312.jpg 1312w" 
+              sizes="(max-width: 320px) 280px, 
+                     (max-width: 748px) 728px, 
+                     (max-width: 1019px) 1000px, 
+                     (max-width: 1287px) 1260px, 
+                     1312px" 
+              type="image/jpeg">
+      <!-- WebP image for browsers that support it -->
+      <source srcset="assets/images/image-omelette-320.webp 320w,
+                     assets/images/image-omelette-748.webp 748w,
+                     assets/images/image-omelette-1019.webp 1019w,
+                     assets/images/image-omelette-1287.webp 1287w,
+                     assets/images/image-omelette-1312.webp 1312w" 
+              sizes="(max-width: 320px) 280px, 
+                     (max-width: 748px) 728px, 
+                     (max-width: 1019px) 1000px, 
+                     (max-width: 1287px) 1260px, 
+                     1312px" 
+              type="image/webp">
+      <!-- Default image for browsers that do not support the <picture> element -->
+      <img src="assets/images/image-omelette.jpg" class="recipe__image" alt="Omelet Recipe" width="1312" height="600">
+    </picture>    
 
 
     <!-- Header-->
