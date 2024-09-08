@@ -1,0 +1,27 @@
+{
+  "pieces.cloudCapabilities": "Blended",
+  "pieces.telemetry": true,
+
+  "liveSassCompile.settings.compileOnWatch": false,
+  "liveSassCompile.settings.watchOnLaunch": true,
+  "liveSassCompile.settings.useNewCompiler": true,
+  "liveSassCompile.settings.showOutputWindowOn": "None",
+  "liveSassCompile.settings.autoprefix":true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": "-dev.css",
+      "savePath": null,
+      "savePathReplacementPairs": null
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": null,
+      "savePathReplacementPairs": null,
+      "generateMap": false
+    },
+  ],
+
+  "livePreview.autoRefreshPreview": "On Changes to Saved Files"
+}

@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* 2. HTML and body defaults */
+html {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* 3. Typography */
+h1,h2,h3,h4,h5,h6,
+button,input,label {
+  line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-wrap: auto;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* 4. Lists */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* 5. Links */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* 6. Media elements */
+img,picture,video,canvas,svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Form elements */
+input,button,textarea,select {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* 8. Misc */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}

@@ -1,0 +1,124 @@
+@import "partials/variables";
+@import "partials/fonts";
+@import "partials/mixins";
+@import "partials/base";
+
+main {
+  padding: 1.75rem 1rem;
+  background-color: $color-black-leather-jacket-bg;
+  @include grid-center();
+  min-height: 100vh;
+
+  .product-card {
+    width: 100%;
+    background-color: $color-neutral-white-bg;
+    box-shadow:
+      5px 3px 120px 30px hsla(41, 33%, 46%, 0.3),
+      2px 1px 10px 10px hsl(93, 43%, 13%);
+    border-radius: 12px;
+    @include flex-setup(column);
+
+    @media (min-width: 600px) {
+      @include flex-setup(row);
+      max-width: 600px;
+      max-height: 450px;
+    }
+
+    .product-card__image {
+      height: 240px;
+      width: 100%;
+      object-fit: cover;
+      filter: saturate(200%) drop-shadow(30px 30px 90px hsla(40, 64.3%, 43.9%, 0.64));
+      border-radius: 12px 12px 0 0;
+
+      @media (min-width: 600px) {
+        height: 450px;
+        width: 50%;
+        border-radius: 12px 0 0 12px;
+      }
+    }
+
+    .product-card__content {
+      @include flex-setup(column, center, stretch);
+      padding: clamp(1.5rem, 0.75rem + 2vw, 2rem);
+      align-items: stretch;
+      height: auto;
+
+      @media (min-width: 600px) {
+        width: 50%;
+        height: 450px;
+        padding: 2rem;
+        justify-content: space-between;
+      }
+
+      .product-card__category {
+        @include font-style(
+          $font-family-body,
+          $font-weight-medium,
+          0.75rem,
+          15px,
+          5px,
+          $color-neutral-dark-grayish-blue-body
+        );
+        margin-bottom: 0.75rem;
+        text-transform: uppercase;
+      }
+
+      .product-card__title {
+        @include font-style($font-family-heading, $font-weight-bold, 2rem, 32px, 0, $color-neutral-very-dark-blue-tile);
+        margin-bottom: 1rem;
+      }
+
+      .product-card__description {
+        @include font-style(
+          $font-family-body,
+          $font-weight-medium,
+          0.875rem,
+          23px,
+          0,
+          $color-neutral-dark-grayish-blue-body
+        );
+        margin-bottom: 1.5rem;
+      }
+
+      .product-card__price-container {
+        margin-bottom: 1.25rem;
+        @include flex-setup(row, start, center);
+
+        .product-card__current-price {
+          @include font-style($font-family-heading, $font-weight-bold, 2rem, 32px, 0, $color-primary-dark-cyan-primary);
+          margin-right: 1.25rem;
+        }
+
+        .product-card__original-price {
+          @include font-style(
+            $font-family-body,
+            $font-weight-medium,
+            0.8125rem,
+            23px,
+            0,
+            $color-neutral-dark-grayish-blue-body
+          );
+        }
+      }
+
+      .product-card__button {
+        @include font-style($font-family-body, $font-weight-bold, 0.875rem, 15px, 0, $color-neutral-white-bg);
+        @include flex-setup(row, center, center);
+        padding: 0.875rem;
+        gap: 0.75rem;
+        border-radius: 8px;
+        background-color: $color-primary-dark-cyan-primary;
+
+        &:hover,
+        &:active {
+          background-color: $color-primary-dark-cyan-hover;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
