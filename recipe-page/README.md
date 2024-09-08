@@ -39,8 +39,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Recipe page](https://www.frontendmentor.io/solutions/media-queries-aria-labeling-tabindexing-Sjbp6ubVfc)
+- Live Site URL: [Recioe page Live](https://main--omelette-recipe-blog.netlify.app/)
 
 ## My process
 
